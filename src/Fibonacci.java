@@ -24,7 +24,7 @@ public class Fibonacci {
             return 1;
         }
         else {
-            long res = fib(num - 2) + fib(num - 1);
+            long res = fib1(num - 2) + fib1(num - 1);
             cache[num] = res;
             return res;
         }
