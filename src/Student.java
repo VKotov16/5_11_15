@@ -2,6 +2,7 @@
 public class Student {
     private String name;
     private String surname;
+    int[] marks;
 
     public Student() {
         //name = "n/a";
@@ -13,6 +14,7 @@ public class Student {
     public Student(String name, String surname) {
         this.name = name;
         this.surname = surname;
+        marks = new int[10];
     }
 
     public String getName() {
