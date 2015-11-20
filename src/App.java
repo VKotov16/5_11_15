@@ -2,14 +2,21 @@
 public class App {
     public static void main(String[] args) {
         Student ivanov = new Student("Ivan", "Ivanov");
-        //ivanov.name = "Ivan";
-        //ivanov.surname = "Ivanov";
-        ivanov.printInfo();
-        //Student petrov = new Student();
-        //petrov.printInfo();
+        int[] l = new int[] {1,5,4,2,7};
+        ivanov.setMarks(l);
 
-        Student petrov = new Student();
-        petrov.setName("Petr");
-        System.out.println(petrov.getName());
+        Group gr = new Group();
+        gr.setStudent(ivanov);
+        gr.setStudent(ivanov);
+        gr.setStudent(ivanov);
+        gr.setStudent(ivanov);
+        gr.setStudent(ivanov);
+        gr.setStudent(ivanov);
+        gr.setStudent(ivanov);
+        gr.printGroup();
+        gr.deleteStudentIndex(3);
+        System.out.println("***");
+        gr.printGroup();
+
     }
 }

@@ -5,10 +5,7 @@ public class Student {
     int[] marks;
 
     public Student() {
-        //name = "n/a";
-        //surname = "n/a";
         this("n/a", "n/a");
-        printInfo();
     }
 
     public Student(String name, String surname) {
@@ -34,8 +31,24 @@ public class Student {
         this.surname = surname;
     }
 
-    public void printInfo() {
+    public void printInfoName() {
         System.out.println("My name is " + name + ", surname is " + surname);
+    }
+
+    public void setMarks(int[] marks)
+    {
+        for(int k: this.marks)
+        {
+            this.marks = marks;
+        }
+        System.out.println();
+    }
+
+    public void printMarks() {
+        for(int k: this.marks)
+        {
+            System.out.print(k + " ");
+        }
     }
 }
 
